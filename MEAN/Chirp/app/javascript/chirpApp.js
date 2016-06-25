@@ -18,16 +18,3 @@ app.controller('mainController', function ($scope) {
                           };
     };
 });
-
-app.controller('authController', function($scope) {
-  $scope.user = {username: '', password: ''};
-  $scope.errorMessage = '';
-
-  $scope.login = function() {
-    $scope.errorMessage = 'login request for ' + $scope.user.username;
-  };
-
-  $scope.register = function() {
-    $scope.errorMessage = 'Registration request for ' + $scope.user.username;
-  };
-});
